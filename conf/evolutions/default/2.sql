@@ -3,6 +3,15 @@
 # --- !Ups
 
 insert into company (id,name) values (  1,'Apple Inc.');
+
+insert into employee (id,name, company_id) values (1, 'test employee 1', 1);
+insert into employee (id,name, company_id) values (2, 'test employee 2', 1);
+
+insert into uniform (id, name, employee_id) values (1, 'red shirt', 1);
+insert into uniform (id, name, employee_id) values (2, 'blue shirt', 1);
+insert into uniform (id, name, employee_id) values (3, 'green shirt', 2);
+insert into uniform (id, name, employee_id) values (4, 'yellow shirt', 2);
+
 insert into company (id,name) values (  2,'Thinking Machines');
 insert into company (id,name) values (  3,'RCA');
 insert into company (id,name) values (  4,'Netronics');

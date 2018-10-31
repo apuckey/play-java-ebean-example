@@ -1,5 +1,6 @@
 package models;
 
+import io.ebean.annotation.History;
 import play.data.format.Formats;
 import play.data.validation.Constraints;
 
@@ -10,7 +11,8 @@ import java.util.Date;
 /**
  * Computer entity managed by Ebean
  */
-@Entity 
+@Entity
+@History
 public class Computer extends BaseModel {
 
     private static final long serialVersionUID = 1L;

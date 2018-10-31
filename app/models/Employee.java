@@ -1,20 +1,21 @@
 package models;
 
 import io.ebean.annotation.History;
+import play.data.format.Formats;
 import play.data.validation.Constraints;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
+import java.util.Date;
 import java.util.List;
 
-
 /**
- * Company entity managed by Ebean
+ * Computer entity managed by Ebean
  */
 @Entity
 @History
-public class Company extends BaseModel {
+public class Employee extends BaseModel {
 
     private static final long serialVersionUID = 1L;
 
@@ -22,7 +23,6 @@ public class Company extends BaseModel {
     public String name;
 
     @OneToMany(cascade = CascadeType.ALL)
-		public List<Employee> employees;
-
+    public List<Uniform> uniforms;
 }
 
